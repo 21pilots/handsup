@@ -1,2 +1,8 @@
-<h1>Answers#new</h1>
-<p>Find me in app/views/answers/new.html.erb</p>
+<h1>답변하기</h1>
+<%= @question.content.html_safe %>
+<%= form_tag answers_path do %>
+    <%= hidden_field_tag :question_id, @question.id %>
+    <%= cktext_area nil, :content, cols: 40, ckeditor: { uiColor: '#AADC6E', toolbar: 'mini' }, placeholder: '당신의 답변은 무엇인가요?' %>
+    <button type="submit" name="action" class="btn btn-default">작성완료</button>
+<% end %>
+

@@ -1,0 +1,5 @@
+<form action='/questions/update'>
+    <input type="hidden" name="id" value="<%=@question.id%>">
+    <input type="text" name="content" value="<%=@question.content.html_safe%>"><br>
+    <button type="submit" name="action" class="btn btn-default">수정완료</button>
+</form>

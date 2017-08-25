@@ -10,6 +10,13 @@ end
 gem 'rails', '~> 5.1.3.rc2'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'simple_form'
+gem 'ckeditor'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'devise'
+gem 'jquery-rails'
+gem 'acts_as_votable', '~> 0.10.0'
+gem 'ancestry'
 # Use sqlite3 as the database for Active Record
 # Use Puma as the app server
 gem 'puma', '~> 3.7'

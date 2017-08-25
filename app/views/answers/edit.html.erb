@@ -1,2 +1,8 @@
-<h1>Answers#edit</h1>
-<p>Find me in app/views/answers/edit.html.erb</p>
+<h2>답변수정하기</h2>
+
+<%= form_tag answers_path do %>
+    <input type="hidden" name="id" value="<%=@answer.id%>">
+    <input type="text" name="content" value="<%=@answer.content.html_safe%>">
+    <%= cktext_area nil, :content, cols: 40, ckeditor: { uiColor: '#AADC6E', toolbar: 'mini' }%>
+    <button type="submit" name="action" class="btn btn-default">수정완료</button>
+<% end %>

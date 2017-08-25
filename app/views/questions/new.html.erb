@@ -1,0 +1,10 @@
+<div class="container">
+    <br>
+    <%= form_tag questions_path do%>
+        <%= cktext_area nil, :content, cols: 40, ckeditor: { uiColor: '#AADC6E', toolbar: 'mini' }, placeholder: '당신의 질문은 무엇인가요?' %><br>
+        <button class="btn waves-effect waves-light" type="submit" name="action" style="left: 86%;">작성
+            <i class="material-icons right"></i>
+        </button>
+    <% end %>
+    <br>
+</div>
