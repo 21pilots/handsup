@@ -25,7 +25,7 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -60,7 +60,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
+  #gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
