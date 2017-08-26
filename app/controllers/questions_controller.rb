@@ -9,7 +9,7 @@ class QuestionsController < ApplicationController
     question = Question.new
     question.user_id = current_user.id #에러나면 뒤에 id들을 지워봐
     question.title = params[:title]  
-    question.major = params[:major]  
+    question.major = Major.first #params[:major]  
     question.content = params[:content]
     question.save  
     redirect_to root_path  
